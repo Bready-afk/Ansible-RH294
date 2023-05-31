@@ -1,0 +1,13 @@
+---
+- name: this is  my first play
+  hosts: localhost
+  vars
+    - "{{var_1}}"
+
+
+  tasks:
+    - name: the first task
+      ansible.builtin.copy:
+        src:
+        dst:
+      when: var_1
